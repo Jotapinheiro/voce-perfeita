@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #000; /* Fundo escuro para destacar o poster */
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    height: 700px; /* Ajuste a altura conforme necessário */
+    display: flex;
+    overflow: hidden;
+}
+
+.details {
+    position: relative;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente para melhor contraste */
+    color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 400px; /* Largura ajustada */
+    width: 40%; /* Largura ajustada para a área de texto */
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente */
+    margin-left: 30px; /* Espaçamento adicional para não colar na borda esquerda */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+.poster {
+    width: 60%; /* Largura ajustada para o fundo */
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    border-radius: 12px;
+}
+
+.title {
+    margin-top: 0;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: left; /* Garante que o título esteja alinhado à esquerda */
+}
+
+.synopsis {
+    font-size: 22px;
+    margin: 20px 0;
+    line-height: 1.6;
+    text-align: left; /* Garante que a sinopse esteja alinhada à esquerda */
+}
+
+/* Estilos para o botão "Assistir" */
+.watch-btn {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #007bff; /* Azul */
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.watch-btn:hover {
+    background-color: #0056b3; /* Azul mais escuro */
+}
